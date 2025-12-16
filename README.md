@@ -1,5 +1,5 @@
 # Global Health ETL, Analytics, Machine learning Automated Reporting Pipeline
-
+ 
 This project implements an end-to-end health data analytics pipeline that transforms raw global health data into actionable insights and automatically delivers weekly reports.
 
 The workflow begins with an ETL process where raw health data is loaded, cleaned, standardized, and validated using pandas. Key steps include handling missing values, normalizing numerical features, and preparing the dataset for both analytical queries and machine learning. The cleaned dataset is then persisted to a SQLite database, enabling structured SQL-based analysis and reproducibility.
