@@ -1,4 +1,4 @@
-#Global Health ETL, Analytics, Machine learning Automated Reporting Pipeline
+# Global Health ETL, Analytics, Machine learning Automated Reporting Pipeline
 
 This project implements an end-to-end health data analytics pipeline that transforms raw global health data into actionable insights and automatically delivers weekly reports.
 
