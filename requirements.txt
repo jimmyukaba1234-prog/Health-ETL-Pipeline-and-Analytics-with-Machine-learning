@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+plotly
+joblib
+yagmail
+fpdf
+reportlab
+xgboost==1.7.6
+scikit-learn
+Pillow
+matplotlib
+seaborn
+streamlit-option-menu
