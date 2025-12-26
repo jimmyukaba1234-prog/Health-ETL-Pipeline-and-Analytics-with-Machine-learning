@@ -1,15 +1,105 @@
-# Global Health ETL, Analytics, Machine learning Automated Reporting Pipeline
- 
-This project implements an end-to-end health data analytics pipeline that transforms raw global health data into actionable insights and automatically delivers weekly reports.
+Global Health Analytics & Machine Learning Web Application
 
-The workflow begins with an ETL process where raw health data is loaded, cleaned, standardized, and validated using pandas. Key steps include handling missing values, normalizing numerical features, and preparing the dataset for both analytical queries and machine learning. The cleaned dataset is then persisted to a SQLite database, enabling structured SQL-based analysis and reproducibility.
+This project is an end-to-end Global Health Analytics Web Application that transforms messy real-world health data into actionable insights through automated data cleaning, analytics, machine learning prediction, and automated reporting.
 
-Using SQL and pandas, the project performs exploratory and statistical analysis to uncover trends in disease prevalence, mortality rates, recovery rates, and treatment costs across regions and time. Aggregated metrics and rankings are generated to highlight high-risk diseases and key public health indicators.
+The system combines ETL pipelines, SQL analytics, machine learning, data visualization, and a deployed web interface to support data-driven decision-making for public health stakeholders.
 
-For modeling, the pipeline applies machine learning techniques (including feature encoding and regression-based prediction) to estimate mortality rates based on historical health indicators. Model evaluation metrics are computed to assess predictive performance.
+Project Overview
 
-Insights are visualized using interactive and static charts (Plotly and Matplotlib), enabling clear comparison across diseases and years. These visualizations are integrated into an automated reporting system.
+The application begins with an ETL process where raw global health datasets are ingested, cleaned, standardized, and validated using pandas. This includes handling missing values, normalizing numerical features, encoding categorical variables, and ensuring data consistency for analysis and modeling.
 
-The final stage generates a professionally formatted PDF and Excel report summarizing insights, predictions, and key metrics. Reports are automatically distributed via email using SMTP, making the pipeline suitable for real-world reporting and decision-support use cases.
+The cleaned data is stored in a SQLite database, enabling structured, reproducible, and scalable SQL-based analysis.
 
-Overall, this project demonstrates practical skills in data engineering, SQL analytics, machine learning, visualization, and automation, reflecting a production-style approach to health data analysis and reporting.
+Web Application Functionality
+
+A deployed interactive web application allows users to:
+
+Select a country and year
+
+View automatically generated analytics based on the selected filters
+
+Explore insights through interactive visualizations
+
+Generate machine learning predictions
+
+Download and receive automated reports
+
+Analytics & Visualization
+
+Using SQL and pandas, the application performs analytical queries to uncover trends in:
+
+Disease prevalence
+
+Mortality rates
+
+Recovery rates
+
+Treatment costs
+
+Results are dynamically updated based on the selected country and year and displayed using interactive visualizations built with Plotly and Matplotlib, enabling clear comparison across time and regions.
+
+Machine Learning & Prediction
+
+The application integrates machine learning models to predict key health indicators such as mortality rates based on historical health data.
+
+Key features include:
+
+Data preprocessing and feature encoding
+
+Regression-based prediction models
+
+Feature importance analysis to explain model behavior
+
+Model evaluation metrics to assess predictive performance
+
+Predictions are presented directly within the web application alongside analytical insights.
+
+Automated Reporting & Email Delivery
+
+The system automatically generates professionally formatted PDF reports summarizing:
+
+Country- and year-specific analytics
+
+Visualizations and key metrics
+
+Machine learning predictions and feature importance
+
+Reports can be:
+
+Downloaded directly from the web application
+
+Automatically sent via email to stakeholders using SMTP
+
+This makes the application suitable for real-world reporting, monitoring, and decision-support workflows.
+
+Key Technologies
+
+Python (pandas, NumPy)
+
+SQLite & SQL
+
+Machine Learning (scikit-learn)
+
+Data Visualization (Plotly)
+
+Web Application Framework (e.g., Streamlit)
+
+Automated Reporting (PDF)
+
+Email Automation (SMTP)
+
+Project Highlights
+
+End-to-end ETL and analytics pipeline
+
+Interactive, deployed web application
+
+Country- and year-based analytics
+
+Machine learning prediction with explainability
+
+Automated PDF report generation
+
+Email delivery to stakeholders
+
+Production-style architecture and workflow
