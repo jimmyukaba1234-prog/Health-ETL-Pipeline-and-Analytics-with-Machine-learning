@@ -1,0 +1,14 @@
+##Live Web Application Demo
+
+**Access the deployed Global Health Analytics Web Application:**  
+🔗 https://shorturl.at/6dYbO
+
+**Try it yourself:**
+- Download the sample CSV file from this repository  
+- Upload the CSV file into the web application  
+- Select a **country** and **year** to view analytics and visualizations  
+- View machine learning predictions and feature importance  
+- Generate a downloadable PDF report or automatically send it via email
+
+**Sample Dataset:**  
+[Download Sample CSV](data/global_health_data.csv)
