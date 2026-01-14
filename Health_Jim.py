@@ -1,16 +1,33 @@
-# ---------------------- Core Web Framework ----------------------
-import streamlit as st
 
-# ---------------------- Data Handling ----------------------
+"""
+Health Analytics Web Application
+
+This Streamlit-based web application provides an end-to-end health data analytics
+solution designed to transform raw, messy healthcare datasets into actionable insights.
+The app supports automated data loading, cleaning, analysis, and visualization to aid
+evidence-based decision-making in public health and healthcare planning.
+
+Key Features:
+- Automated data ingestion and preprocessing
+- Exploratory data analysis and statistical summaries
+- Predictive modeling and performance evaluation
+- Interactive visualizations and dashboards
+- Real-time insights delivered through a user-friendly web interface
+
+The application is built using Python, Pandas, SQL-compatible workflows,
+machine learning models, and interactive visualizations to simulate a
+production-style health analytics system.
+
+"""
+
+
+
+import streamlit as st
 import pandas as pd
 import numpy as np
 import io
-
-# ---------------------- Data Storage ----------------------
 import sqlite3
 from pathlib import Path
-
-# ---------------------- Visualization ----------------------
 import plotly.express as px
 
 # ---------------------- Machine Learning ----------------------
@@ -21,7 +38,6 @@ import re
 
 # ---------------------- Reporting ----------------------
 from reportlab.lib.pagesizes import letter
-
 from io import BytesIO
 from reportlab.lib import colors
 import tempfile
@@ -1255,5 +1271,6 @@ if send_email_btn:
 
         except Exception as e:
             st.sidebar.error(f"❌ Failed to send email: {e}")
+
 
 
